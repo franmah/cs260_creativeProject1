@@ -1,0 +1,239 @@
+:root {
+  --main: #B5DBAC;
+  --titles: #913E0F;
+}
+
+body {
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2.5rem;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  background-color: var(--main);
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+  margin-top: 8px;
+  text-align: right;
+}
+
+
+h1 {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px 0px;
+  color: var(--titles);
+}
+
+footer a {
+  display: block;
+  padding-top: 8px;
+  margin-right: 16px;
+  color: black;
+}
+
+/* Navbar */
+
+nav {
+ height: 100px;
+ font-family: Optima, sans-serif;
+ margin-bottom: 16px;
+}
+
+.navbar-brand {
+  font-family: cursive;
+  font-size: 3em;
+  color: var(--titles) !important;
+}
+
+nav a {
+  color: black !important;
+  font-size: large;
+}
+
+nav a:hover {
+  color: #69778A !important;
+}
+
+nav .active a {
+  text-decoration: underline;
+
+}
+
+.bg-dark {
+  background-color: var(--main) !important;
+}
+
+
+nav button {
+  background-color: black !important;
+}
+
+/* End of navbar */
+
+/* Login page*/
+.login-form {
+  background-color: #E9E2DE;
+  margin: 0 auto;
+  padding: 16px 8px;
+}
+
+.login-form .note {
+  margin-bottom: 24px;
+}
+
+.login-form .login-check {
+  padding-bottom: 16px;
+}
+
+.login-form a {
+  color: white;
+  text-decoration: none;
+}
+
+/* unvisited link */
+.login-form a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+.login-form a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.login-form a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* selected link */
+.login-form a:active {
+  color: white;
+  text-decoration: none;
+}
+
+/* login page end */
+
+
+/* Stats page */
+
+.stats-ctn {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;;
+}
+
+.transactions {
+  background-color: white;
+  width: 98%;
+  margin: 0 auto;
+  padding-bottom: 12px;
+}
+
+.positive-price {
+  color: green !important;
+}
+
+.negative-price {
+  color: red !important;
+}
+
+.chart {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* End of stats page */
+
+
+/* Budget page */
+
+.transaction-form {
+  padding: 26px 8px;
+  margin: 0 auto;
+}
+
+.transaction-form input {
+  margin-bottom: 12px;;
+}
+
+/* End of Budget page */
+
+
+/* About page */
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pf-section p {
+  width: 45%;
+  padding-left: 32px;
+}
+
+.wob-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wob-subsection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.wob-section img{
+  width: 30%;
+}
+
+.ending-section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* End of about page */
+
+
+@media only screen and (max-width: 900px) {
+  .navbar-collapse {
+    background-color: var(--main) !important;
+    padding-left: 16px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top: 1px solid white;
+  }
+
+  .login-form {
+    width: 80%;
+  }
+
+  .transaction-form {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .login-form {
+    width: 50%;
+  }
+
+  .transaction-form {
+    max-width: 50%;
+  }
+}

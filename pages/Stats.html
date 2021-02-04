@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport'
+  content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>Online Budget</title>
+</head>
+
+<body>
+
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">OnlineBudget</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Stats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/Budget.html">Budget</a>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/About.html">About</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Logout</a>
+        </li>
+      </ul>
+  </div>
+  </nav>
+<div class="stats-ctn">
+  <h1>Statistics for January</h1>
+
+  <img class="chart" src="/images/chart.png"/>
+
+  <h1>Transactions</h1>
+  <table class="transactions table table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Date</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Category</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>01/28/2020</td>
+        <td class="negative-price">($256.23)</td>
+        <td>Groceries</td>
+        <td>walmart</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>01/28/2020</td>
+        <td class="negative-price">($20.34)</td>
+        <td>Fast-food</td>
+        <td>In-N-out</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>01/26/2020</td>
+        <td class="positive-price">$183</td>
+        <td>Income</td>
+        <td>Venmo. Sold clothes on marketplace</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>01/25/2020</td>
+        <td class="negative-price">($12.90)</td>
+        <td>Monthly</td>
+        <td>netflix</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>01/24/2020</td>
+        <td class="positive-price">$1,000</td>
+        <td>Income</td>
+        <td>investment in $GME</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>01/24/2020</td>
+        <td class="negative-price">($7.90)</td>
+        <td>Monthly</td>
+        <td>Hulu</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>01/15/2020</td>
+        <td class="negative-price">($107.90)</td>
+        <td>Groceries</td>
+        <td>Costco</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+  <p><a target="_blank" rel="noopener noreferrer"
+     href="https://github.com/BYU-CS-260-Winter-2021/lab-1-photography-website-franmah">github link</a></p>
+</footer>
+
+</html>
