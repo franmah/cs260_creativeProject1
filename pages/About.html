@@ -4,7 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name='viewport'
-  content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  content='width=device-width, initial-scale=1.0, maximum-scale=1.0' /><link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/styles.css" />
   <title>Online Budget</title>
@@ -23,6 +28,9 @@
           <a class="nav-link" href="/pages/Stats.html">Stats</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="/pages/Transactions.html">Transactions</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/pages/Budget.html">Budget</a>
         <li class="nav-item active">
           <a class="nav-link" href="#">About</a>
@@ -38,53 +46,62 @@
     </div>
   </nav>
 
-  <div class="content">
+  <div class="about-content">
     <h1>Personal Finance</h1>
 
-    <div class="pf-section">
-      
-    <img src="/images/p_f.png" />
+    <div class="personal-finance-section">
 
-    <p>
-      Throughout my student I have learned the importance of budgeting. 
-      With the very little money I earned, I had to make sure I could pay for food, rent and save for my student loan and tuition.
-      For a long time my bank account was a mystery to me. I had no idea how much I had, how much it cost to withdraw at the atm...
-      After taking my first finance class, I gained interest in personal finance. 
-      Personal finance covers many topics such as budgeting, having an emergency fund and saving (investing) for retirement.
-      Budgeting is an important part, and OnlineBudget can help you.
-    </p>
+      <img class="pf-img" src="/images/p_f.png" />
+
+      <p>
+        Throughout my student life, I have learned the importance of budgeting. 
+        With the very little money I earned, I had to make sure I could pay for food, rent, and save for my student loan and tuition.
+        For a long time, my bank account was a mystery to me. I had no idea how much I had or how much it cost to withdraw at the ATM.
+        After taking my first finance class, I gained interest in personal finance. 
+        Personal finance covers many topics such as budgeting, having an emergency fund, and saving (investing) for retirement.
+        Budgeting is an important part of personal finance and OnlineBudget can help you.
+      </p>
     </div>
 
-    <h1>Why OnlineBudget</h1>
-  
-    <div class="wob-section">
-      <div class="wob-subsection">
-        <p>
-          When doing a budget you usually plan how much you will spend for different expense categories. This method has some problems.
-          What if you reach your budget for groceries, do you stop eating? How do you plan for random events during the month?
-          Some answers is that you are supposed to adujst your monthly budget using previous data and save for some unplanned expenses. 
-          But it is still difficult to apply.
-        </p>
-        <p> 
-          My method is to keep track of every expense and income you have. OnlineBudget will not let you automatically pull them from your bank.
-          You must enter them manually to get a feel of how many transactions you had and how much you spent. It also helps you make sure your account is safe 
-          (meaning there were no unwanted transactions).
-          For each transaction you can give it a category such as groceries, car, loan, monthly, subscription, fun, fast-food...
-          After entering your transactions for the month you can use OnlineBudget to see your monthly statistics. You can easily see where your money went.
-          Most importantly you can make sure you earned more than you spent.
-        </p>
-      </div>
+    <div class="section-separator separator"></div>
 
-      <img src="/images/ob.png"/>
+  <div class="wob-section">
+
+    <h1>Why OnlineBudget?</h1>
+
+    <div class="ob-pres">
+      <img class="ob-pres-img" src="/images/ob.png"/>
+      <figcaption>Example of transaction visualization.</figcaption>
+    </div>
+      <p>
+        When doing a budget, you usually plan how much you will spend for different expense categories. This method has some problems.
+        What if you reach your budget for groceries? Do you stop eating? How do you plan for random events during the month?
+        Some answers are that you are supposed to adujst your monthly budget using previous data and save for some unplanned expenses. 
+        But it is still difficult to apply.
+      </p>
+
+      <p> 
+        My method is to keep track of every expense and income you have. OnlineBudget will not let you automatically pull them from your bank.
+        You must enter them manually to get a feel for how many transactions you had and how much you spent. It also helps you make sure your account is safe 
+        (meaning there were no unwanted transactions).
+        For each transaction you can give it a category such as groceries, car, loan, monthly, subscription, fun, or fast-food.
+        After entering your transactions for the month, you can use OnlineBudget to see your monthly statistics. You can easily see where your money went.
+        Most importantly, you can make sure you earned more than you spent.
+      </p>
+
+      <p>
+        The goal is to go through each category and see if you feel comfortable with the amount you spent. 
+        Maybe you spent a lot on groceries, but it is acceptable to you as you are trying to eat healthy.
+        Maybe you spent a lot on fast-food. You find out you ate out this month more than you thought. You could set a goal to go out less often next month.
+        The purpose is not to feel bad or judgemental, but to learn and improve. 
+        Unlike a normal budget, the most important is to not set restrictions such as a maximum amount for one category, but rather to adjust spending habits.
+      </p>
 
     </div>
-    <p class="ending-section">
-      The goal is to go through each category and see if you feel comfortable with the amount you spent. 
-      Maybe you spent a lot on groceries but it is acceptable to you as you are trying to eat healthy.
-      Maybe you spent a lot on fast-food, you find out you ate out this month more than you thought. You could set a goal to go out less often next month.
-      The purpose is not to feel bad or judgemental, but to learn and improve. 
-      Unlike a normal budget, the most important is to not set restrictions such as a maximum amount for one category, but rather to adjust spending habits.
-    </p>
+  </div>
+
+  <div class="separator"></div>
+
   </div>
   
 

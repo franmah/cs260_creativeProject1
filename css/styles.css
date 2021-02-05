@@ -1,6 +1,9 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+
 :root {
-  --main: #B5DBAC;
-  --titles: #913E0F;
+  --main: #7FD89A;
+  --titles: #173867;
 }
 
 body {
@@ -23,10 +26,12 @@ footer {
 
 
 h1 {
+  font-family: 'Comfortaa', cursive;
   width: fit-content;
   margin: 0 auto;
   padding: 8px 0px;
   color: var(--titles);
+  margin-bottom: 32px;
 }
 
 footer a {
@@ -40,18 +45,18 @@ footer a {
 
 nav {
  height: 100px;
- font-family: Optima, sans-serif;
+ font-family: 'Comfortaa', cursive;
  margin-bottom: 16px;
 }
 
 .navbar-brand {
-  font-family: cursive;
+  font-family: 'Abril Fatface', cursive;
   font-size: 3em;
   color: var(--titles) !important;
 }
 
 nav a {
-  color: black !important;
+  color: var(--titles) !important;
   font-size: large;
 }
 
@@ -75,11 +80,13 @@ nav button {
 
 /* End of navbar */
 
+
 /* Login page*/
 .login-form {
-  background-color: #E9E2DE;
+  background-color: #EEF5E2;
   margin: 0 auto;
   padding: 16px 8px;
+  margin-top: 10%;
 }
 
 .login-form .note {
@@ -168,47 +175,54 @@ nav button {
 
 
 /* About page */
-
-.content {
-  display: flex;
-  flex-direction: column;
-}
-
-.pf-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pf-section p {
-  width: 45%;
-  padding-left: 32px;
-}
-
-.wob-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.wob-subsection {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.wob-section img{
-  width: 30%;
-}
-
-.ending-section {
-  width: 70%;
+.about-content {
+  width: 66%;
   margin: 0 auto;
+  padding: 16px;
+}
+
+.pf-img {
+  float: left;
+  width: 30%;
+  margin-right: 24px;
+}
+
+.ob-pres {
+  float: right;
+  width: 40%;
+}
+
+.ob-pres figcaption {
+  text-align: center;
+  font-size: 12px;
+}
+
+.ob-pres img {
+  width: 100%;
+}
+
+.separator {
+  clear: both;
+}
+
+.section-separator {
+  width: 66%; 
+  margin: 0 auto;
+  margin-top: 52px;
+  margin-bottom: 32px;
+  border-bottom: 3px solid var(--titles);
 }
 
 /* End of about page */
 
+
+.entry-btn {
+  color: white !important;
+}
+
+.new-month {
+  margin-top: 42px; 
+}
 
 @media only screen and (max-width: 900px) {
   .navbar-collapse {
@@ -225,6 +239,16 @@ nav button {
 
   .transaction-form {
     max-width: 100%;
+  }
+
+
+  .navbar-brand {
+    font-size: 2em;
+  }
+
+  .about-content {
+    width: 90%;
+    padding: 0px;
   }
 }
 
